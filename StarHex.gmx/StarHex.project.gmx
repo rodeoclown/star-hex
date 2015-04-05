@@ -5,9 +5,17 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\s_hex</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\o_hex</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\r_hexGrid</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

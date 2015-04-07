@@ -4,7 +4,7 @@
         return 0;
     }
 
-    var map = ds_map_find_value( MAP_OF_MAPS, argument0 );
+    var map = ds_map_find_value( global.MAP_OF_MAPS, argument0 );
     ds_map_destroy( map );
-    ds_map_delete( MAP_OF_MAPS, argument0 );
+    ds_map_delete( global.MAP_OF_MAPS, argument0 );
 }

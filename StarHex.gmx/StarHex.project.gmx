@@ -13,10 +13,14 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Hex Grid Functions">
+      <script>scripts\getHex.gml</script>
+      <script>scripts\getNeighbourHex.gml</script>
       <script>scripts\buildHexGrid.gml</script>
+      <script>scripts\initialiseHex.gml</script>
       <script>scripts\gridHash.gml</script>
     </scripts>
     <scripts name="Data Structures">
+      <script>scripts\initialiseDataStructures.gml</script>
       <scripts name="Named Map Functions">
         <script>scripts\get_named_map.gml</script>
         <script>scripts\named_map_exists.gml</script>
@@ -36,10 +40,6 @@
   <rooms name="rooms">
     <room>rooms\r_hexGrid</room>
   </rooms>
-  <constants number="2">
-    <constant name="MAP_OF_MAPS">ds_map_create()</constant>
-    <constant name="MAP_OF_LISTS">ds_map_create()</constant>
-  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

@@ -4,7 +4,7 @@
         return 0;
     }
 
-    var list = ds_map_find_value( MAP_OF_LISTS, argument0 );
+    var list = ds_map_find_value( global.MAP_OF_LISTS, argument0 );
     ds_list_destroy( list );
-    ds_map_delete( MAP_OF_LISTS, argument0 );
+    ds_map_delete( global.MAP_OF_LISTS, argument0 );
 }

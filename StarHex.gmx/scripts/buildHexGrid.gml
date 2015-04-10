@@ -10,15 +10,6 @@
     var start_r = argument3;
     var radius  = argument4;
     
-    enum hexDirection {
-         rightDown,
-         rightUp,
-         up,
-         leftUp,
-         leftDown,
-         down        
-    }
-    
     var centreHex = getHex( start_q, start_r, true );
     initialiseHex( centreHex, start_x, start_y );
     

@@ -13,11 +13,11 @@
     switch hexDir
     {
         case hexDirection.rightDown:    q++;        break;
-        case hexDirection.rightUp:      q++; r--;   break;
-        case hexDirection.up:           r--;        break;
-        case hexDirection.leftUp:       q--;        break;
-        case hexDirection.leftDown:     q--; r++;   break;
         case hexDirection.down:         r++;        break;
+        case hexDirection.leftUp:       q--;        break;
+        case hexDirection.up:           r--;        break;
+        case hexDirection.rightUp:      q++; r--;   break;
+        case hexDirection.leftDown:     q--; r++;   break;
     }
 
     return getHex( q, r, createIfNotExist );

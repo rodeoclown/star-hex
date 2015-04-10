@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="o_hexManager" x="448" y="288" name="inst_82BB50CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_inputManager" x="512" y="288" name="inst_6BE97F98" locked="0" code="" scaleX="1" scaleY="1" colour="4294901760" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

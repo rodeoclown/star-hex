@@ -1,8 +1,11 @@
-///getHex( q, r, createIfNotExist )
+///getHex( q, r, createIfNotExist?=false )
 {
-    var q = argument0;
-    var r = argument1;
-    var createIfNotExist = argument2;
+    var q = argument[0];
+    var r = argument[1];
+    var createIfNotExist = false;
+    if (argument_count > 2 ) {
+         createIfNotExist = argument[2];
+    }
 
     var hexMap = get_named_map( 'hexMap' );
     var hash = gridHash( q, r );

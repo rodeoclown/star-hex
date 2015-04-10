@@ -6,19 +6,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_hex</sprite>
+    <sprite>sprites\s_hex_31x31</sprite>
+    <sprite>sprites\s_hex_47x39</sprite>
     <sprite>sprites\s_internal_use</sprite>
+    <sprite>sprites\s_player</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Hex Grid Functions">
-      <script>scripts\getHex.gml</script>
-      <script>scripts\getNeighbourHex.gml</script>
-      <script>scripts\buildHexGrid.gml</script>
-      <script>scripts\initialiseHex.gml</script>
-      <script>scripts\gridHash.gml</script>
-    </scripts>
     <scripts name="Data Structures">
       <script>scripts\initialiseDataStructures.gml</script>
       <scripts name="Named Map Functions">
@@ -32,10 +27,29 @@
         <script>scripts\destroy_named_list.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Hex Grid Functions">
+      <script>scripts\getHex.gml</script>
+      <script>scripts\getNeighbourHex.gml</script>
+      <script>scripts\isNeighbourHex.gml</script>
+      <script>scripts\initialiseHex.gml</script>
+      <script>scripts\gridHash.gml</script>
+      <script>scripts\buildHexGrid.gml</script>
+      <scripts name="Enums">
+        <script>scripts\enum_hexDirection.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Actor Functions">
+      <script>scripts\moveActor.gml</script>
+      <script>scripts\addActor.gml</script>
+      <script>scripts\onKeyDown.gml</script>
+      <script>scripts\moveActorInDirection.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\o_hex</object>
     <object>objects\o_hexManager</object>
+    <object>objects\o_player</object>
+    <object>objects\o_inputManager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_hexGrid</room>

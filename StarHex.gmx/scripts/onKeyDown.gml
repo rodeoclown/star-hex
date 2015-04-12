@@ -3,17 +3,21 @@
     var lastKeyPressed = argument[0];
     
     switch( lastKeyPressed ){
-        case ord('Q'): moveActorInDirection( global.player, hexDirection.leftUp );
+        case ord( 'Q' ): moveActorInDirection( global.player, hexDirection.leftUp );
             break;
-        case ord('W'): moveActorInDirection( global.player, hexDirection.up );
+        case ord( 'W' ): moveActorInDirection( global.player, hexDirection.up );
             break;
-        case ord('E'): moveActorInDirection( global.player, hexDirection.rightUp );
+        case ord( 'E' ): moveActorInDirection( global.player, hexDirection.rightUp );
             break;
-        case ord('A'): moveActorInDirection( global.player, hexDirection.leftDown );
+        case ord( 'A' ): moveActorInDirection( global.player, hexDirection.leftDown );
             break;
-        case ord('S'): moveActorInDirection( global.player, hexDirection.down );
+        case ord( 'S' ): moveActorInDirection( global.player, hexDirection.down );
             break;
-        case ord('D'): moveActorInDirection( global.player, hexDirection.rightDown );
+        case ord( 'D' ): moveActorInDirection( global.player, hexDirection.rightDown );
+            break;
+        case ord( 'R' ): game_restart();
+            break;
+        case ( vk_escape ): game_end();
             break;
     }
 }

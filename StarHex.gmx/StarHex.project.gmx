@@ -10,10 +10,16 @@
     <sprite>sprites\s_hex_47x39</sprite>
     <sprite>sprites\s_internal_use</sprite>
     <sprite>sprites\s_player</sprite>
+    <sprite>sprites\s_simple_enemy</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="Game Functions">
+      <script>scripts\initialise.gml</script>
+      <script>scripts\onKeyDown.gml</script>
+      <script>scripts\initialiseLevel.gml</script>
+    </scripts>
     <scripts name="Data Structures">
       <script>scripts\initialiseDataStructures.gml</script>
       <scripts name="Named Map Functions">
@@ -37,11 +43,11 @@
       <scripts name="Enums">
         <script>scripts\enum_hexDirection.gml</script>
       </scripts>
+      <script>scripts\getRandomHex.gml</script>
     </scripts>
     <scripts name="Actor Functions">
       <script>scripts\moveActor.gml</script>
       <script>scripts\addActor.gml</script>
-      <script>scripts\onKeyDown.gml</script>
       <script>scripts\moveActorInDirection.gml</script>
     </scripts>
   </scripts>
@@ -50,8 +56,10 @@
     <object>objects\o_hexManager</object>
     <object>objects\o_player</object>
     <object>objects\o_inputManager</object>
+    <object>objects\o_simpleEnemy</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\initGame</room>
     <room>rooms\r_hexGrid</room>
   </rooms>
   <help>

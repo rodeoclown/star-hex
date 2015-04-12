@@ -5,6 +5,7 @@
     
     var actor = instance_create( startingHex.x, startingHex.y, actorType );
     actor.hex = undefined;
+    actor.lastHex = undefined;
     moveActor( actor, startingHex );
     
     return actor;

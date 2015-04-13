@@ -34,15 +34,16 @@
       </scripts>
     </scripts>
     <scripts name="Hex Grid Functions">
-      <script>scripts\getHex.gml</script>
-      <script>scripts\getNeighbourHex.gml</script>
-      <script>scripts\isNeighbourHex.gml</script>
-      <script>scripts\initialiseHex.gml</script>
-      <script>scripts\gridHash.gml</script>
-      <script>scripts\buildHexGrid.gml</script>
       <scripts name="Enums">
         <script>scripts\enum_hexDirection.gml</script>
       </scripts>
+      <script>scripts\getHex.gml</script>
+      <script>scripts\getNeighbourHex.gml</script>
+      <script>scripts\isNeighbourHex.gml</script>
+      <script>scripts\isHexEmpty.gml</script>
+      <script>scripts\initialiseHex.gml</script>
+      <script>scripts\gridHash.gml</script>
+      <script>scripts\buildHexGrid.gml</script>
       <script>scripts\getRandomHex.gml</script>
     </scripts>
     <scripts name="Actor Functions">

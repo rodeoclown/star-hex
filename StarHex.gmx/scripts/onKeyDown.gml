@@ -1,19 +1,21 @@
 ///onKeyDown( lastKeyPressed )
 {
     var lastKeyPressed = argument[0];
+    var allowPlayerInput = ( global.currentState == gameState.playerTurn );
+    show_debug_message( "allowPlayerInput: " + string(allowPlayerInput) + " " + string(global.currentState) + " " + string(gameState.playerTurn) )
     
     switch( lastKeyPressed ){
-        case ord( 'Q' ): moveActorInDirection( global.player, hexDirection.leftUp );
+        case ord( 'Q' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.leftUp );
             break;
-        case ord( 'W' ): moveActorInDirection( global.player, hexDirection.up );
+        case ord( 'W' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.up );
             break;
-        case ord( 'E' ): moveActorInDirection( global.player, hexDirection.rightUp );
+        case ord( 'E' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.rightUp );
             break;
-        case ord( 'A' ): moveActorInDirection( global.player, hexDirection.leftDown );
+        case ord( 'A' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.leftDown );
             break;
-        case ord( 'S' ): moveActorInDirection( global.player, hexDirection.down );
+        case ord( 'S' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.down );
             break;
-        case ord( 'D' ): moveActorInDirection( global.player, hexDirection.rightDown );
+        case ord( 'D' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.rightDown );
             break;
         case ord( 'R' ): game_restart();
             break;

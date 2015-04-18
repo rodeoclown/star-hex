@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message( "mouse_up (" + string( mouse_x ) + ", " + string( mouse_y ) + ")" );
+            <string>onMouseUp();
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message( "mouse_down (" + string( mouse_x ) + ", " + string( mouse_y ) + ")" );
+            <string>onMouseDown();
 </string>
           </argument>
         </arguments>

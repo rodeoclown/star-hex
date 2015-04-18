@@ -11,14 +11,14 @@
     <sprite>sprites\s_internal_use</sprite>
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_simple_enemy</sprite>
+    <sprite>sprites\s_exitPortal</sprite>
+    <sprite>sprites\s_terrain</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Game Functions">
-      <script>scripts\initialise.gml</script>
-      <script>scripts\onKeyDown.gml</script>
-      <script>scripts\initialiseLevel.gml</script>
+    <scripts name="Misc Functions">
+      <script>scripts\boolToString.gml</script>
     </scripts>
     <scripts name="Data Structures">
       <script>scripts\initialiseDataStructures.gml</script>
@@ -33,9 +33,37 @@
         <script>scripts\destroy_named_list.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Player">
+      <script>scripts\playerAfterMove.gml</script>
+    </scripts>
+    <scripts name="Enemies">
+      <script>scripts\addEnemy.gml</script>
+      <script>scripts\removeEnemy.gml</script>
+      <script>scripts\processEnemyTurn.gml</script>
+    </scripts>
+    <scripts name="Environment">
+      <script>scripts\addExitPortal.gml</script>
+      <script>scripts\isValidTerrainHex.gml</script>
+      <script>scripts\generateTerrain.gml</script>
+    </scripts>
+    <scripts name="Game Functions">
+      <scripts name="Enums">
+        <script>scripts\enum_gameState.gml</script>
+        <script>scripts\getGameStateName.gml</script>
+      </scripts>
+      <script>scripts\initialise.gml</script>
+      <script>scripts\onKeyDown.gml</script>
+      <script>scripts\onMouseUp.gml</script>
+      <script>scripts\onMouseDown.gml</script>
+      <script>scripts\initialiseLevel.gml</script>
+      <script>scripts\completeLevel.gml</script>
+      <script>scripts\changeState.gml</script>
+      <script>scripts\processGameState.gml</script>
+    </scripts>
     <scripts name="Hex Grid Functions">
       <scripts name="Enums">
         <script>scripts\enum_hexDirection.gml</script>
+        <script>scripts\getHexDirectionName.gml</script>
       </scripts>
       <script>scripts\getHex.gml</script>
       <script>scripts\getNeighbourHex.gml</script>
@@ -45,19 +73,37 @@
       <script>scripts\gridHash.gml</script>
       <script>scripts\buildHexGrid.gml</script>
       <script>scripts\getRandomHex.gml</script>
+      <script>scripts\getHexDirection.gml</script>
+      <script>scripts\areHexesInLine.gml</script>
     </scripts>
     <scripts name="Actor Functions">
-      <script>scripts\moveActor.gml</script>
+      <script>scripts\move.gml</script>
       <script>scripts\addActor.gml</script>
-      <script>scripts\moveActorInDirection.gml</script>
+      <script>scripts\moveInDirection.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\o_hex</object>
-    <object>objects\o_hexManager</object>
-    <object>objects\o_player</object>
-    <object>objects\o_inputManager</object>
-    <object>objects\o_simpleEnemy</object>
+    <objects name="Actors">
+      <objects name="Player">
+        <object>objects\o_player</object>
+      </objects>
+      <objects name="Enemies">
+        <object>objects\o_simpleEnemy</object>
+      </objects>
+      <objects name="Terrain">
+        <object>objects\o_terrain</object>
+      </objects>
+      <object>objects\o_Actor</object>
+    </objects>
+    <objects name="Managers">
+      <object>objects\o_hexManager</object>
+      <object>objects\o_inputManager</object>
+      <object>objects\o_turnManager</object>
+    </objects>
+    <objects name="Game Objects">
+      <object>objects\o_hex</object>
+      <object>objects\o_exitPortal</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\initGame</room>

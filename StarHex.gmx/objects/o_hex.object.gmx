@@ -48,8 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message("Hex(" + string(q) + ", " + string(r) + ") =&gt; Initialised: " + string(initialised));
-moveActor( global.player, id );
+            <string>if( global.currentState == gameState.playerTurn ) {
+    var toHex = id;
+    show_debug_message( "Direction from player: " + getHexDirectionName( getHexDirection( global.player.hex, toHex ) ) );
+    show_debug_message( "Hex in line with player: " + boolToString( areHexesInLine( global.player.hex, toHex ) ) );
+    with( global.player ) move( toHex );
+}
 </string>
           </argument>
         </arguments>

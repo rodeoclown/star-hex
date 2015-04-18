@@ -1,4 +1,4 @@
-///getNeighbourHex( startHex, hexDir, createIfNotExist?=false )
+///getNeighbourHex( startHex, hexDir, createIfNotExist?=false ): hex
 {
     var startHex = argument[0];
     var hexDir = argument[1];

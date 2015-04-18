@@ -1,0 +1,4 @@
+///processEnemyTurn()
+{
+    changeState( gameState.playerTurn );
+}

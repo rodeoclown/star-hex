@@ -10,9 +10,11 @@
     
     changeState( gameState.playerTurn );
     
-    var hex = undefined;
-    do {
-        hex = getRandomHex( global.player.hex );
-    } until ( is_undefined( hex.actor ) )
-    addEnemy( o_simpleEnemy, hex );
+    repeat(5) {
+        var hex = undefined;
+        do {
+            hex = getRandomHex( global.player.hex );
+        } until ( is_undefined( hex.actor ) )
+        addEnemy( o_simpleEnemy, hex );
+    }
 }

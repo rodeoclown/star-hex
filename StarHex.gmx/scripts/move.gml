@@ -14,11 +14,8 @@
     {
         // Check the actor is moving to a neighbouring hex
         if ( isNeighbourHex( hex, targetHex ) && isHexEmpty( targetHex ) ) {
-            // TODO - This needs to animate, not just dump them there
-            
-            if ( !is_undefined( fn_beforeMove ) ) {
-                script_execute( fn_beforeMove, targetHex );
-            }
+            // TODO - This needs to animate, not just dump them there    
+            script_execute( fn_beforeMove, targetHex );
             
             var lastHex = hex;
             hex = targetHex;
@@ -29,9 +26,7 @@
             targetHex.actor = id;
             lastHex.actor = undefined;
             
-            if ( !is_undefined( fn_afterMove ) ){
-                script_execute( fn_afterMove, lastHex );
-            }
+            script_execute( fn_afterMove, lastHex );
         }
     }
 }

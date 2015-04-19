@@ -19,6 +19,7 @@
   <scripts name="scripts">
     <scripts name="Misc Functions">
       <script>scripts\boolToString.gml</script>
+      <script>scripts\NOP.gml</script>
     </scripts>
     <scripts name="Data Structures">
       <script>scripts\initialiseDataStructures.gml</script>
@@ -37,6 +38,13 @@
       <script>scripts\playerAfterMove.gml</script>
     </scripts>
     <scripts name="Enemies">
+      <scripts name="AI">
+        <script>scripts\plan_nothing.gml</script>
+        <script>scripts\plan_simpleEnemy.gml</script>
+      </scripts>
+      <scripts name="Initialisers">
+        <script>scripts\initialiseSimpleEnemy.gml</script>
+      </scripts>
       <script>scripts\addEnemy.gml</script>
       <script>scripts\removeEnemy.gml</script>
       <script>scripts\processEnemyTurn.gml</script>
@@ -75,11 +83,16 @@
       <script>scripts\getRandomHex.gml</script>
       <script>scripts\getHexDirection.gml</script>
       <script>scripts\areHexesInLine.gml</script>
+      <script>scripts\getDistanceFromHex.gml</script>
     </scripts>
     <scripts name="Actor Functions">
+      <scripts name="Enums">
+        <script>scripts\enum_plan.gml</script>
+      </scripts>
       <script>scripts\move.gml</script>
       <script>scripts\addActor.gml</script>
       <script>scripts\moveInDirection.gml</script>
+      <script>scripts\initialiseActor.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -93,7 +106,7 @@
       <objects name="Terrain">
         <object>objects\o_terrain</object>
       </objects>
-      <object>objects\o_Actor</object>
+      <object>objects\o_actor</object>
     </objects>
     <objects name="Managers">
       <object>objects\o_hexManager</object>

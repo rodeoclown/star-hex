@@ -93,6 +93,7 @@
       <script>scripts\addActor.gml</script>
       <script>scripts\moveInDirection.gml</script>
       <script>scripts\initialiseActor.gml</script>
+      <script>scripts\attack.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

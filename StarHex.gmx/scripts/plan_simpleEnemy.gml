@@ -3,7 +3,7 @@
     var playerHex = global.player.hex;
     
     if ( isNeighbourHex( hex, playerHex ) ) {
-        fn_plannedAction = NOP;
+        fn_plannedAction = attack;
         target_hex = playerHex;
         return plan.doAttack;
     }

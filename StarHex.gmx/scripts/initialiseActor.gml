@@ -8,4 +8,6 @@
     
     fn_makePlan = plan_nothing;
     fn_plannedAction = NOP;
+    
+    fn_takeDamage = NOP;
 }

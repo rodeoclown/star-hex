@@ -11,7 +11,7 @@
         if( isNeighbourHex( enemy.hex, previousHex ) &&
             isNeighbourHex( enemy.hex, hex ) ) {
             // The enemy was next to the player the whole way through the move, so they are toast
-            removeEnemy( enemy );
+            with( enemy ) script_execute(fn_takeDamage);
         }
     }
     

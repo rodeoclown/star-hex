@@ -36,6 +36,8 @@
     </scripts>
     <scripts name="Player">
       <script>scripts\playerAfterMove.gml</script>
+      <script>scripts\initialisePlayer.gml</script>
+      <script>scripts\playerTakeDamage.gml</script>
     </scripts>
     <scripts name="Enemies">
       <scripts name="AI">
@@ -48,11 +50,13 @@
       <script>scripts\addEnemy.gml</script>
       <script>scripts\removeEnemy.gml</script>
       <script>scripts\processEnemyTurn.gml</script>
+      <script>scripts\enemyTakeDamage.gml</script>
     </scripts>
     <scripts name="Environment">
       <script>scripts\addExitPortal.gml</script>
       <script>scripts\isValidTerrainHex.gml</script>
       <script>scripts\generateTerrain.gml</script>
+      <script>scripts\initialiseTerrain.gml</script>
     </scripts>
     <scripts name="Game Functions">
       <scripts name="Enums">

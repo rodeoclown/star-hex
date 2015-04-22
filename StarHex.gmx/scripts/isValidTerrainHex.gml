@@ -19,7 +19,20 @@
         return false;
     }
     
-    // 4 - Can't block off a route to the exit. [TODO]
+    // 4 - Can't block off a route to the exit.
+    //     We can check this by adding a temporary terrain object to the hex, generating 
+    //     pathing values, and then checking we can still reach the exit. Then destroy 
+    //     the temporary instance
+    var tempTerrain = instance_create( hex.x, hex.y, o_terrain );
+    hex.actor = tempTerrain;
+    
+    var pathingMap = get_named_map( "pathingMap" );
+    generatePathingValues();
+    var hasExitPath = !is_undefined( pathingMap[? hexHash( exitHex )] );
+    
+    hex.actor = undefined;
+    with ( tempTerrain ) instance_destroy();
     
     return true;
+    return hasExitPath;
 }

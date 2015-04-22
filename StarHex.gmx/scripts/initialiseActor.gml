@@ -2,6 +2,7 @@
 {
     hex = undefined;
     targetHex = undefined;
+    isBlocking = false;
     
     fn_beforeMove = NOP;
     fn_afterMove  = NOP;

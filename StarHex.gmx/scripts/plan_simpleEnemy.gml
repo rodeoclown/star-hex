@@ -1,14 +1,25 @@
 {
     // Simple enemy AI - move closer to the player, and attack if in a neighbouring cell
-    var playerHex = global.player.hex;
+    var pathingMap = get_named_map( "pathingMap" );
+    var currentRange = pathingMap[? hexHash( hex )];
     
-    if ( isNeighbourHex( hex, playerHex ) ) {
+    fn_plannedAction = NOP;
+    
+    if ( is_undefined( currentRange ) ) {
+        return plan.doNothing;
+    }
+    
+    if ( currentRange == 1 ) {
         fn_plannedAction = attack;
-        target_hex = playerHex;
+        targetHex = global.player.hex;
         return plan.doAttack;
     }
     
-    fn_plannedAction = move;
-    targetHex = getNeighbourHex( hex, getHexDirection( hex, playerHex ) );
-    return plan.doMove;
+    targetHex = getClosestHexToPlayer( hex );
+    if ( is_defined( targetHex ) ) {
+        fn_plannedAction = move;
+        return plan.doMove;
+    }
+    
+    return plan.doNothing;
 }

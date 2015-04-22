@@ -20,6 +20,7 @@
     <scripts name="Misc Functions">
       <script>scripts\boolToString.gml</script>
       <script>scripts\NOP.gml</script>
+      <script>scripts\is_defined.gml</script>
     </scripts>
     <scripts name="Data Structures">
       <script>scripts\initialiseDataStructures.gml</script>
@@ -83,11 +84,14 @@
       <script>scripts\isHexEmpty.gml</script>
       <script>scripts\initialiseHex.gml</script>
       <script>scripts\gridHash.gml</script>
+      <script>scripts\hexHash.gml</script>
       <script>scripts\buildHexGrid.gml</script>
       <script>scripts\getRandomHex.gml</script>
       <script>scripts\getHexDirection.gml</script>
       <script>scripts\areHexesInLine.gml</script>
       <script>scripts\getDistanceFromHex.gml</script>
+      <script>scripts\generatePathingValues.gml</script>
+      <script>scripts\getClosestHexToPlayer.gml</script>
     </scripts>
     <scripts name="Actor Functions">
       <scripts name="Enums">

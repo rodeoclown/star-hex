@@ -16,7 +16,7 @@
     
     while ( !ds_priority_empty( enemyPQ ) ) {
         var enemy = ds_priority_delete_max( enemyPQ );
-        with (enemy) script_execute( fn_plannedAction, targetHex );
+        with ( enemy ) script_execute( fn_plannedAction );
     }
     
     ds_priority_destroy( enemyPQ );

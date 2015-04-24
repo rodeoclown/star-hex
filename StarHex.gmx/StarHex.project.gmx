@@ -21,6 +21,7 @@
       <script>scripts\boolToString.gml</script>
       <script>scripts\NOP.gml</script>
       <script>scripts\is_defined.gml</script>
+      <script>scripts\def.gml</script>
     </scripts>
     <scripts name="Data Structures">
       <script>scripts\initialiseDataStructures.gml</script>
@@ -42,8 +43,12 @@
     </scripts>
     <scripts name="Enemies">
       <scripts name="AI">
+        <scripts name="SimpleEnemy">
+          <script>scripts\plan_simpleEnemy.gml</script>
+          <script>scripts\move_simpleEnemy.gml</script>
+        </scripts>
         <script>scripts\plan_nothing.gml</script>
-        <script>scripts\plan_simpleEnemy.gml</script>
+        <script>scripts\getClosestHexToPlayer.gml</script>
       </scripts>
       <scripts name="Initialisers">
         <script>scripts\initialiseSimpleEnemy.gml</script>
@@ -91,7 +96,6 @@
       <script>scripts\areHexesInLine.gml</script>
       <script>scripts\getDistanceFromHex.gml</script>
       <script>scripts\generatePathingValues.gml</script>
-      <script>scripts\getClosestHexToPlayer.gml</script>
     </scripts>
     <scripts name="Actor Functions">
       <scripts name="Enums">

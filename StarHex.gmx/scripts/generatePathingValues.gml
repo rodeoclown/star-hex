@@ -36,6 +36,15 @@
         range++;
     }
     
+    // Check if there's a path to the exit, and if so, increase it's range so 
+    // it will only be moved to as a last resort
+    var exitHash = hexHash( global.exitPortal.hex );
+    var exitRange = pathingMap[? exitHash];
+    if ( is_defined( exitRange ) ) {
+        exitRange = exitRange + 5;
+        pathingMap[? exitHash] = exitRange;
+    }
+    
     ds_stack_destroy( currentStack );
     ds_stack_destroy( nextStack );
 }

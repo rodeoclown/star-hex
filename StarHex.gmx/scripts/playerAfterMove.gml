@@ -8,9 +8,10 @@
     for( var i = enemyCount -1; i >= 0; i-- ) {
         var enemy = enemyList[| i];
         
-        if( isNeighbourHex( enemy.hex, previousHex ) &&
-            isNeighbourHex( enemy.hex, hex ) ) {
-            // The enemy was next to the player the whole way through the move, so they are toast
+        if( isNeighbourHex( enemy.hex, hex ) &&
+            ( isNeighbourHex( enemy.hex, previousHex ) || ( areHexesInLine( enemy.hex, previousHex ) ) ) ) {
+            // The enemy was next to the player the whole way through the move, or they were charged.
+            // Either way, they are toast
             with( enemy ) script_execute(fn_takeDamage);
         }
     }

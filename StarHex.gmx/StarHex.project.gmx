@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\s_hex_31x31</sprite>
     <sprite>sprites\s_hex_47x39</sprite>
+    <sprite>sprites\s_hexBig</sprite>
     <sprite>sprites\s_internal_use</sprite>
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_simple_enemy</sprite>

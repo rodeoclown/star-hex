@@ -78,6 +78,7 @@
       <script>scripts\completeLevel.gml</script>
       <script>scripts\changeState.gml</script>
       <script>scripts\processGameState.gml</script>
+      <script>scripts\removeAllActorsFromList.gml</script>
     </scripts>
     <scripts name="Hex Grid Functions">
       <scripts name="Enums">

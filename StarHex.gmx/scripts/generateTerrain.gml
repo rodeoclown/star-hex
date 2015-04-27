@@ -9,6 +9,7 @@
     var terrainBlobs = 0;
     
     var terrainList = get_named_list( "terrainList" );
+    removeAllActorsFromList( terrainList );
     
     var currentHex = undefined;
     

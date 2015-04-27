@@ -10,4 +10,16 @@
         show_debug_message("Generating pathing values");
         generatePathingValues();
     }
+    
+    if (newState == gameState.playerTurn){
+        show_debug_message("Checking for stuck player");
+        var canMove = false;
+        for( var dir = 0; dir < 6; dir++ ) {
+            var hex = getNeighbourHex( global.player.hex, dir );
+            canMove |= def( hex ) && isHexEmpty( hex );
+        }
+        if ( !canMove ) {
+            with( targetHex.actor ) script_execute( fn_takeDamage );
+        }
+    }
 }

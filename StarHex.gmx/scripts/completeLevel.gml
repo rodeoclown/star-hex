@@ -1,6 +1,9 @@
 ///completeLevel()
 {
-    // Should probably do something here...
-    
-    game_restart();
+    with (global.player){
+        hex.actor = undefined;
+        instance_destroy();
+    }
+    global.levelNum++;
+    initialiseLevel();
 }

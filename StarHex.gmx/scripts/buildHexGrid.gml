@@ -11,7 +11,9 @@
     var radius  = argument4;
     
     var centreHex = getHex( start_q, start_r, true );
-    initialiseHex( centreHex, start_x, start_y );
+    if ( !centreHex.initialised ){
+        initialiseHex( centreHex, start_x, start_y );
+    }
     
     var tempHex = centreHex;
     

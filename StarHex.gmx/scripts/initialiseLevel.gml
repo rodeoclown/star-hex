@@ -7,10 +7,12 @@
     global.exitPortal = addExitPortal( getHex( 0, -4 ) );
     
     generateTerrain();
-    
     changeState( gameState.playerTurn );
     
-    repeat(5) {
+    removeAllActorsFromList( get_named_list( "enemyList" ) );
+    //ds_map_clear( get_named_map( "enemyMap" ) );
+    
+    repeat( min( global.levelNum + 2, 25 ) ) {
         var hex = undefined;
         do {
             hex = getRandomHex( global.player.hex );

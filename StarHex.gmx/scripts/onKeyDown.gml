@@ -17,6 +17,11 @@
             break;
         case ord( 'D' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.rightDown );
             break;
+            
+        case ord( 'M' ): global.isDebug = !global.isDebug;
+                         show_debug_overlay( global.isDebug );
+                         keyboard_clear( ord( 'M' ) );
+            break;
         case ord( 'R' ): game_restart();
             break;
         case ( vk_escape ): game_end();

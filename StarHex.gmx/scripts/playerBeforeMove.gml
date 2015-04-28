@@ -1,0 +1,4 @@
+///playerBeforeMove()
+{
+    changeState( gameState.playerAnimating );
+}

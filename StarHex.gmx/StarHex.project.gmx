@@ -36,9 +36,15 @@
         <script>scripts\named_list_exists.gml</script>
         <script>scripts\destroy_named_list.gml</script>
       </scripts>
+      <scripts name="Named Stack Functions">
+        <script>scripts\get_named_stack.gml</script>
+        <script>scripts\named_stack_exists.gml</script>
+        <script>scripts\destroy_named_stack.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Player">
       <script>scripts\playerAfterMove.gml</script>
+      <script>scripts\playerBeforeMove.gml</script>
       <script>scripts\initialisePlayer.gml</script>
       <script>scripts\playerTakeDamage.gml</script>
     </scripts>
@@ -58,6 +64,9 @@
       <script>scripts\removeEnemy.gml</script>
       <script>scripts\processEnemyTurn.gml</script>
       <script>scripts\enemyTakeDamage.gml</script>
+      <script>scripts\animateEnemies.gml</script>
+      <script>scripts\enemyBeforeMove.gml</script>
+      <script>scripts\enemyAfterMove.gml</script>
     </scripts>
     <scripts name="Environment">
       <script>scripts\addExitPortal.gml</script>
@@ -104,6 +113,7 @@
         <script>scripts\enum_plan.gml</script>
       </scripts>
       <script>scripts\move.gml</script>
+      <script>scripts\animate_move.gml</script>
       <script>scripts\addActor.gml</script>
       <script>scripts\moveInDirection.gml</script>
       <script>scripts\initialiseActor.gml</script>

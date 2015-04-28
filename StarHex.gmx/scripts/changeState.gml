@@ -6,7 +6,7 @@
     show_debug_message("Changing state: " + getGameStateName( oldState ) + " -> " + getGameStateName( newState ) );
     global.currentState = newState;
     
-    if (oldState == gameState.playerTurn){
+    if (oldState == gameState.playerAnimating){
         show_debug_message("Generating pathing values");
         generatePathingValues();
     }

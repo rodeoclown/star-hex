@@ -20,5 +20,11 @@
     }
     
     ds_priority_destroy( enemyPQ );
-    changeState( gameState.playerTurn );
+    
+    if ( ds_list_empty( enemyList ) ){
+        changeState( gameState.playerTurn );
+    }
+    else {
+        changeState( gameState.enemyAnimating );
+    }
 }

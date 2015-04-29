@@ -9,18 +9,21 @@
         var plan = undefined;
         with (enemy) { plan = script_execute( fn_makePlan ) };
         var distance = getDistanceFromHex( enemy.hex, global.player.hex );
-        var priority = plan * 100 * distance;
-        // enemy plans are prioritised by their planned action, then by distance away (so closer enemies act sooner)
+            // enemy plans are prioritised by their planned action, then by distance away (so closer enemies act sooner)
+        var priority = plan * 100 * distance;        
         ds_priority_add( enemyPQ, enemy, priority );
     }
     
+    
+    // Execute the plan
     while ( !ds_priority_empty( enemyPQ ) ) {
         var enemy = ds_priority_delete_max( enemyPQ );
         with ( enemy ) script_execute( fn_plannedAction );
     }
-    
     ds_priority_destroy( enemyPQ );
     
+    
+    // Wrap up
     if ( ds_list_empty( enemyList ) ){
         changeState( gameState.playerTurn );
     }

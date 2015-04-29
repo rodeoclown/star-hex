@@ -114,6 +114,7 @@
       </scripts>
       <script>scripts\move.gml</script>
       <script>scripts\animate_move.gml</script>
+      <script>scripts\animate_NOP.gml</script>
       <script>scripts\addActor.gml</script>
       <script>scripts\moveInDirection.gml</script>
       <script>scripts\initialiseActor.gml</script>

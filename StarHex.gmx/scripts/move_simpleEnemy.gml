@@ -4,5 +4,8 @@
     if ( is_defined( targetHex ) )
     {
         move( targetHex );
-    }  
+    }
+    else {
+        fn_animate = animate_NOP;
+    }
 }

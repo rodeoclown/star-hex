@@ -31,6 +31,74 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ( !global.isDebug ) return 0;
+
+var terrainList = get_named_list( "terrainList" );
+if( !def(actor) ) {
+    ds_list_add( terrainList, addActor( o_terrain, id ) );
+} 
+else {
+    if ( instance_position( actor.x, actor.y, o_terrain ) != noone ){
+        with( actor ) {
+            ds_list_delete( terrainList, ds_list_find_index( terrainList, id ) );
+            hex.actor = undefined;
+            instance_destroy();
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ( !global.isDebug ) return false;
+
+if ( !def(actor) ) {
+    addEnemy( o_simpleEnemy, id );
+} else {
+    if ( instance_position( actor.x, actor.y, o_simpleEnemy ) != noone ){
+        removeEnemy( actor );
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
@@ -48,7 +116,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.currentState == gameState.playerTurn ) {
+            <string>if( global.isDebug &amp;&amp; global.currentState == gameState.playerTurn ) {
     var toHex = id;
     show_debug_message( "Direction from player: " + getHexDirectionName( getHexDirection( global.player.hex, toHex ) ) );
     show_debug_message( "Hex in line with player: " + boolToString( areHexesInLine( global.player.hex, toHex ) ) );

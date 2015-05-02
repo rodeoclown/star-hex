@@ -1,5 +1,6 @@
 ///initialiseLevel()
 {
+    audio_stop_all();
     buildHexGrid( x, y, 0, 0, 5 );
     buildHexGrid( x, y, 0, 1, 5 );
 

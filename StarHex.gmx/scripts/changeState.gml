@@ -3,16 +3,16 @@
     var newState = argument0;
     var oldState = global.currentState;
     
-    show_debug_message("Changing state: " + getGameStateName( oldState ) + " -> " + getGameStateName( newState ) );
+    //show_debug_message("Changing state: " + getGameStateName( oldState ) + " -> " + getGameStateName( newState ) );
     global.currentState = newState;
     
     if (oldState == gameState.playerAnimating){
-        show_debug_message("Generating pathing values");
+        //show_debug_message("Generating pathing values");
         generatePathingValues();
     }
     
     if (newState == gameState.playerTurn){
-        show_debug_message("Checking for stuck player");
+        //show_debug_message("Checking for stuck player");
         var canMove = false;
         for( var dir = 0; dir < 6; dir++ ) {
             var hex = getNeighbourHex( global.player.hex, dir );

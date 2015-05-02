@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_enemyMove</sound>
+    <sound>sound\snd_playerMove</sound>
+    <sound>sound\snd_playerShoot</sound>
+    <sound>sound\snd_enemyShoot</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_hex_31x31</sprite>
     <sprite>sprites\s_hex_47x39</sprite>
@@ -44,6 +49,7 @@
     </scripts>
     <scripts name="Player">
       <script>scripts\playerAfterMove.gml</script>
+      <script>scripts\playerDuringMove.gml</script>
       <script>scripts\playerBeforeMove.gml</script>
       <script>scripts\initialisePlayer.gml</script>
       <script>scripts\playerTakeDamage.gml</script>

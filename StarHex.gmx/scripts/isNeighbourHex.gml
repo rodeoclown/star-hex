@@ -7,6 +7,9 @@
     var r_diff = hex.r - otherHex.r;
     var abs_q_diff = abs( q_diff );
     var abs_r_diff = abs( r_diff );
+
+    var isNeighbour = ( abs_q_diff < 2 && abs_r_diff < 2 && q_diff != r_diff );
     
-    return ( abs_q_diff < 2 && abs_r_diff < 2 && q_diff != r_diff )
+//    show_debug_message( hexHash( hex ) + " => " + hexHash ( otherHex ) + ": " + boolToString( isNeighbour ) );
+    return isNeighbour;
 }

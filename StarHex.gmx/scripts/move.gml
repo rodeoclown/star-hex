@@ -5,6 +5,7 @@
     if ( is_undefined( hex ) ) {
         // This actor isn't anywhere, so let's put them on the hex directly
         hex = targetHex;
+        lastHex = hex;
         x = targetHex.x;
         y = targetHex.y;
         depth = -y;   

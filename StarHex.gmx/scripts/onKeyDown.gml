@@ -2,7 +2,7 @@
 {
     var lastKeyPressed = argument[0];
     var allowPlayerInput = ( global.currentState == gameState.playerTurn );
-    show_debug_message( "allowPlayerInput: " + string(allowPlayerInput) + " " + string(global.currentState) + " " + string(gameState.playerTurn) )
+    //show_debug_message( "allowPlayerInput: " + string(allowPlayerInput) + " " + string(global.currentState) + " " + string(gameState.playerTurn) )
     
     switch( lastKeyPressed ){
         case ord( 'Q' ): if ( allowPlayerInput ) with( global.player ) moveInDirection( hexDirection.leftUp );

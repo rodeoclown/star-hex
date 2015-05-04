@@ -73,6 +73,8 @@
       <script>scripts\animateEnemies.gml</script>
       <script>scripts\enemyBeforeMove.gml</script>
       <script>scripts\enemyAfterMove.gml</script>
+      <script>scripts\animate_enemyBeginAttack.gml</script>
+      <script>scripts\animate_enemyEndAttack.gml</script>
     </scripts>
     <scripts name="Environment">
       <script>scripts\addExitPortal.gml</script>

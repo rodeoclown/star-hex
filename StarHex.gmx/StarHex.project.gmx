@@ -81,6 +81,8 @@
       <script>scripts\isValidTerrainHex.gml</script>
       <script>scripts\generateTerrain.gml</script>
       <script>scripts\initialiseTerrain.gml</script>
+      <script>scripts\generateStars.gml</script>
+      <script>scripts\initialiseStars.gml</script>
     </scripts>
     <scripts name="Game Functions">
       <scripts name="Enums">

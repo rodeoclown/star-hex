@@ -1,6 +1,7 @@
 ///initialiseLevel()
 {
     audio_stop_all();
+    
     buildHexGrid( x, y, 0, 0, 5 );
     buildHexGrid( x, y, 0, 1, 5 );
 
@@ -8,6 +9,7 @@
     global.exitPortal = addExitPortal( getHex( 0, -4 ) );
     
     generateTerrain();
+    generateStars();
     changeState( gameState.playerTurn );
     
     removeAllActorsFromList( get_named_list( "enemyList" ) );

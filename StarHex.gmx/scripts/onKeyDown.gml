@@ -23,6 +23,9 @@
                          keyboard_clear( ord( 'M' ) );
             break;
         case ord( 'R' ): game_restart();
+                         part_particles_clear( global.starfield );
+            break;
+        case ord( 'P' ): part_particles_clear( global.starfield );
             break;
         case ( vk_escape ): game_end();
             break;

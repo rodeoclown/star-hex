@@ -28,11 +28,10 @@
     
     var pathingMap = get_named_map( "pathingMap" );
     generatePathingValues();
-    var hasExitPath = !is_undefined( pathingMap[? hexHash( exitHex )] );
+    var hasExitPath = def( pathingMap[? hexHash( exitHex )] );
     
     hex.actor = undefined;
     with ( tempTerrain ) instance_destroy();
     
-    return true;
     return hasExitPath;
 }

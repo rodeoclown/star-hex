@@ -116,10 +116,14 @@ if ( !def(actor) ) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( global.isDebug &amp;&amp; global.currentState == gameState.playerTurn ) {
+            <string>if( global.currentState == gameState.playerTurn ) {
     var toHex = id;
-    show_debug_message( "Direction from player: " + getHexDirectionName( getHexDirection( global.player.hex, toHex ) ) );
-    show_debug_message( "Hex in line with player: " + boolToString( areHexesInLine( global.player.hex, toHex ) ) );
+    
+    if( global.isDebug ) {
+        show_debug_message( "Direction from player: " + getHexDirectionName( getHexDirection( global.player.hex, toHex ) ) );
+        show_debug_message( "Hex in line with player: " + boolToString( areHexesInLine( global.player.hex, toHex ) ) );
+    }
+
     with( global.player ) move( toHex );
 }
 </string>

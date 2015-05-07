@@ -7,6 +7,7 @@
                 
         fn_animate = NOP;
         with( global.player ) script_execute( fn_takeDamage );
+        enemyAfterMove();
     }
     else {
         direction = point_direction( targetHex.x, targetHex.y, hex.x, hex.y );

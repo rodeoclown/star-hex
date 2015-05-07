@@ -1,5 +1,8 @@
 ///animateEnemyBeginAttack() [Call with enemy]
 {
+    var moveStack = get_named_stack( "enemyMoveStack" );
+    ds_stack_push( moveStack, id );
+    
     var targetHex = global.player.hex;
     var moveSpeed = max( point_distance( x, y, targetHex.x, targetHex.y )/2 , 9 );
 

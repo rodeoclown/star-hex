@@ -152,6 +152,8 @@
     <objects name="Game Objects">
       <object>objects\o_hex</object>
       <object>objects\o_exitPortal</object>
+      <object>objects\o_instructions</object>
+      <object>objects\o_score</object>
     </objects>
   </objects>
   <rooms name="rooms">

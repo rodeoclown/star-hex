@@ -22,5 +22,8 @@
         return undefined;
     }
     
+    // Lose 5 points for each move
+    score -= 5;
+    
     changeState( gameState.enemyTurn );
 }

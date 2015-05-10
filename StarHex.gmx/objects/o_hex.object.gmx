@@ -152,12 +152,12 @@ if ( !def(actor) ) {
 
 if ( global.isDebug ) {
     var str= string(q) + "," + string(r);
-    draw_text_transformed(x-10, y-5, str, 0.6, 0.6, 0);
+    draw_text_transformed_colour(x-10, y-5, str, 0.6, 0.6, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
     
     var pathingMap = get_named_map( "pathingMap" );
     var range = pathingMap[? gridHash(q,r)];
     if (!is_undefined(range)){
-        draw_text_transformed(x-5, y+5, string(range), 0.6, 0.6, 0);
+        draw_text_transformed_colour(x-5, y+5, string(range), 0.6, 0.6, 0, c_white, c_white, c_white, c_white, 1);
     }
 }
 //show_debug_message("drawn:" + string(x) + ", " + string(y) + " -&gt; " + str);

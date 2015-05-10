@@ -19,7 +19,7 @@
             canMove |= def( hex ) && isHexEmpty( hex );
         }
         if ( !canMove ) {
-            with( targetHex.actor ) script_execute( fn_takeDamage );
+            changeState( gameState.enemyTurn );
         }
     }
 }

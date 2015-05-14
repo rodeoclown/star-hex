@@ -1,5 +1,5 @@
 ///playerTakeDamage() [call with player]
 {
     show_debug_message("OUCH!");
-    game_restart();
+    changeState( gameState.gameOver );
 }

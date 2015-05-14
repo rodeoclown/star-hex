@@ -7,5 +7,6 @@
         case gameState.playerAnimating: return "playerAnimating";
         case gameState.enemyTurn: return "enemyTurn";
         case gameState.enemyAnimating: return "enemyAnimating";
+        case gameState.gameOver: return "gameOver";
     }
 }

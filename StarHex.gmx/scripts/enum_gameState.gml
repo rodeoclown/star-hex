@@ -2,5 +2,6 @@ enum gameState {
     playerTurn,
     playerAnimating,
     enemyTurn,
-    enemyAnimating
+    enemyAnimating,
+    gameOver
 }

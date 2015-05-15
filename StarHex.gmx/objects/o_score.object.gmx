@@ -26,7 +26,18 @@
           <argument>
             <kind>1</kind>
             <string>{
-    draw_text_colour( x, y, "Sector: " + string(global.levelNum) + "#Score: " + string(score), c_white, c_white, c_white, c_white, 1);
+    if (global.currentState == gameState.gameOver) {
+        var height = display_get_gui_height()/2;
+        var width = display_get_gui_width()/2;
+
+        draw_sprite( s_gameOver, 0, width, height );
+        draw_text_colour( width -75, height-45, " G A M E  O V E R##Final Sector:#Final Score:##   R to Restart", c_white, c_white, c_white, c_white, 1);        
+        draw_text_colour( width +45, height-45, "##" + string(global.levelNum) + "#" + string(score), c_white, c_white, c_white, c_white, 1);        
+    }
+    else
+    {
+        draw_text_colour( x, y, "Sector: " + string(global.levelNum) + "#Score: " + string(score), c_white, c_white, c_white, c_white, 1);
+    }
 }
 </string>
           </argument>

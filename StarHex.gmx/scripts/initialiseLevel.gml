@@ -11,7 +11,7 @@
     generateTerrain();
     generateStars();
     changeState( gameState.playerTurn );
-    
+
     removeAllActorsFromList( get_named_list( "enemyList" ) );
     //ds_map_clear( get_named_map( "enemyMap" ) );
     

@@ -19,6 +19,7 @@
     <sprite>sprites\s_simple_enemy</sprite>
     <sprite>sprites\s_exitPortal</sprite>
     <sprite>sprites\s_terrain</sprite>
+    <sprite>sprites\s_gameOver</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

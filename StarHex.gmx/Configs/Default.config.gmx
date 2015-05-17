@@ -62,14 +62,14 @@
     <option_android_use_test_ads>0</option_android_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
     <option_audioGroupCount>1</option_audioGroupCount>
-    <option_author></option_author>
+    <option_author>Ian Tyrrell</option_author>
     <option_backimage>nil</option_backimage>
     <option_borderless>False</option_borderless>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
     <option_colordepth>0</option_colordepth>
-    <option_display_name>GameMaker: Studio</option_display_name>
+    <option_display_name>StarHex</option_display_name>
     <option_displayerrors>True</option_displayerrors>
     <option_facebook_app_display_name></option_facebook_app_display_name>
     <option_facebook_appid></option_facebook_appid>
@@ -117,7 +117,7 @@
     <option_in_app_purchase_enable>0</option_in_app_purchase_enable>
     <option_in_app_purchase_sandbox_mode>0</option_in_app_purchase_sandbox_mode>
     <option_in_app_purchase_server_url></option_in_app_purchase_server_url>
-    <option_information></option_information>
+    <option_information>http://www.the-rodeo.com/blog/starhex/</option_information>
     <option_interpolate>True</option_interpolate>
     <option_ios_adcolony_enable_V4VC>0</option_ios_adcolony_enable_V4VC>
     <option_ios_advertising_enable>0</option_ios_advertising_enable>
@@ -290,7 +290,7 @@
     <option_version>100</option_version>
     <option_version_build>0</option_version_build>
     <option_version_company></option_version_company>
-    <option_version_copyright></option_version_copyright>
+    <option_version_copyright>Ian Tyrrell 2015</option_version_copyright>
     <option_version_description></option_version_description>
     <option_version_major>1</option_version_major>
     <option_version_minor>0</option_version_minor>
@@ -334,7 +334,7 @@
     <option_windowcolor>clBlack</option_windowcolor>
     <option_windows_build_version>0</option_windows_build_version>
     <option_windows_company_info></option_windows_company_info>
-    <option_windows_copyright_info></option_windows_copyright_info>
+    <option_windows_copyright_info>Ian Tyrrell 2015</option_windows_copyright_info>
     <option_windows_description_info></option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>

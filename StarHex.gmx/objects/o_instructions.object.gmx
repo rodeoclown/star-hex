@@ -29,6 +29,8 @@
     draw_text_transformed_colour( x, y, "Q W E#A S D", 1, 1, 0, c_white, c_white, c_white, c_white, 1 );
     draw_text_transformed_colour( x+60, y+10, "- To move", 1, 1, 0, c_white, c_white, c_white, c_white, 1 );
     draw_text_transformed_colour( x, y+40, "###Get to the exit##Destroy enemies by moving#directly towards them,#or passing next to them", 1, 1, 0, c_white, c_white, c_white, c_white, 1 );
+    
+    draw_text_colour( 200, display_get_gui_height() - 15, "StarHex -- http://www.the-rodeo.com/blog/starhex -- (C) Ian Tyrrell 2015", c_white, c_white, c_white, c_white, 1 );
 }
 </string>
           </argument>
